@@ -1,0 +1,223 @@
+.Projects{
+    /* position: relative; */
+    width: 100%;
+    background-color: var(--black);
+    padding-top: 5rem;
+  }
+  .ProjectsContainer{
+    /* position: relative; */
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  .ProjectHeading{
+    margin-top: 0;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .ProjectCards{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .ProjectBox{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    /* background-color: green;
+    background-image: url(./images/calculator\ app\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+  }
+  
+   @media(max-width:450px){
+    .ProjectBox{
+      width: 320px;
+      height: 200px;
+    }
+  } 
+  .ProjectBox1{
+    background-image: url(../../assets/ai_summarizer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .ProjectBox2 {
+    background-image: url(../../assets/gpt3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit:inherit;
+  }
+  
+  
+  .ProjectHoverBoxLeft{
+    position: absolute;
+    left: 3%;
+    top: 4%;
+    /* transform: translateX(20%);
+    transform: translateY(20%); */ 
+    width: 4rem;
+    height: 4rem;
+    border-left: 4px solid var(--white);
+    border-top: 4px solid var(--white);
+  
+  }
+  .ProjectHoverBoxRight{
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
+    width: 4rem;
+    height: 4rem;
+    border-right: 4px solid var(--white);
+    border-bottom: 4px solid var(--white);
+  }
+  .ProjectHoverBoxMid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* left: 26%;
+    top:17%; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+  }
+  .ProjectHoverBoxMid p:last-of-type{
+    text-align: center;
+  }
+  .ProjectName{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+  
+  }
+  .ProjectLink{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  
+    
+  }
+  .ProjectIcon{
+    /* transform: scale(2); */
+    width:55px;
+    color:white;
+  }
+  .ProjectIcon:hover{
+    color:var(--green);
+  }
+  .ProjectHoverBox{
+    display: block;
+    width:100%;
+    height:100%;
+    background-color:transparent;
+    border-radius: 10px ;
+  }
+  .ProjectDetail{
+    color: white;
+    opacity: 0.4;
+    padding: 1rem;
+  }
+  
+  .ProjectBox:hover .ProjectHoverBox{
+   background-color: #040404;
+   opacity: .9;
+   transition: all 0.5s;
+  }
+  .ProjectHoverBoxMid{
+    
+     scale: 0;
+  }
+  .ProjectBox:hover .ProjectHoverBoxMid{
+    scale: 1; 
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .ProjectHoverBoxLeft{
+    
+    scale: 0;
+  }
+  .ProjectBox:hover .ProjectHoverBoxLeft{
+   scale: 1; 
+   opacity: 1;
+   transition: all 0.5s;
+  }
+  .ProjectHoverBoxRight{
+    
+    scale: 0;
+  }
+  .ProjectBox:hover .ProjectHoverBoxRight{
+   scale: 1; 
+   opacity: 1;
+   transition: all 0.5s;
+  }
+  @media(max-width:1300px){
+    .ProjectBox{
+      width: 450px;
+    }
+    
+  }
+  @media(max-width:1150px){
+    .ProjectBox{
+      width: 400px;
+      height: 300px;
+    }
+  }
+  @media(max-width:1020px){
+    .ProjectBox{
+      width: 350px;
+      height: 250px;
+    }
+    .ProjectName{
+      font-size: 1.5rem;
+    }
+  }
+  @media(max-width:900px){
+    .ProjectBox{
+      width: 300px;
+      height: 200px;
+    }
+  }
+  @media(max-width:770px){
+    .ProjectBox{
+      width: 450px;
+      height: 320px;
+    }
+    .ProjectsContainer{
+      width: 90%;
+    }
+    .Projects{
+      padding-top: 1rem;
+    }
+  }
+  @media(max-width:550px){
+    .ProjectBox{
+      width: 350px;
+      height: 280px;
+    }
+    .ProjectDetail{
+      font-size: 0.9rem;
+    }
+    
+  }
+  @media(max-width:380px){
+    .ProjectName{
+      font-size: 1.2rem;
+    }
+    .ProjectDetail{
+      font-size:0.8rem
+    }
+  }  

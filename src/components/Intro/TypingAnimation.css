@@ -1,0 +1,16 @@
+/* src/TypingAnimation.css */
+
+.typing-animation {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(235, 205, 34);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.typing-animation span {
+  border-right: 2px solid rgb(235, 205, 34); /* Cursor effect */
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}

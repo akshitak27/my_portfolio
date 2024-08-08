@@ -1,0 +1,80 @@
+/* Container for the About section */
+.about {
+  display: flex; /* Use flexbox to align children side by side */
+  align-items: flex-start; /* Align items at the start of the cross axis */
+  gap: 2rem; /* Space between the image and the text */
+  padding: 2rem;
+  margin-top: 0;
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Style for the profile image */
+.mypic img {
+  max-width: 300px; /* Adjust as needed */
+  height: 400px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.aboutme {
+  flex: 1;
+  margin-top: 0;
+}
+.abt {
+  text-align: center;
+  margin-top: 0;
+}
+
+.aboutme h2 {
+  margin-top: 0;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.aboutme p{
+  text-align: left;
+}
+
+.des {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: rgb(175, 174, 174);
+}
+
+.sections {
+  margin-bottom: 1.5rem;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.section-p {
+ display: flex;
+ justify-content: center;
+}
+.bit-sections {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.btn-resume {
+  background: rgb(235, 205, 34);
+  border: none;
+  color: black;
+  border-radius: 3rem;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}

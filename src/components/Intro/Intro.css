@@ -1,0 +1,133 @@
+/* Base styles */
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.IntroContent {
+  height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 200;
+}
+
+.introName {
+  color: rgb(235, 205, 34);
+}
+
+.btn {
+  background: white;
+  border: none;
+  color: black;
+  border-radius: 3rem;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #f0f0f0; /* Light grey background on hover */
+  color: #333; /* Darker text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  transform: scale(1.025); /* Slightly enlarge the button on hover */
+}
+
+.btnImg {
+  margin: 0 0.25rem;
+  object-fit: cover;
+  height: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .IntroContent {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #intro {
+    height: calc(100vh - 2rem);
+  }
+  .bg {
+    right: -10vw;
+  }
+
+  .IntroContent {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  .hello {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #intro {
+    height: calc(100vh - 1rem);
+  }
+
+  .IntroContent {
+    font-size: 1.5rem;
+  }
+
+  .hello {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .btnImg {
+    height: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .IntroContent {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+  }
+
+  .bg {
+    right: -20vw;
+  }
+  .hello {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .btnImg {
+    height: 0.5rem;
+  }
+}

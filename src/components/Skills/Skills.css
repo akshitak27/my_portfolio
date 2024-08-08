@@ -1,0 +1,90 @@
+.skills-section {
+  padding: 20px;
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+}
+
+.skills-category {
+  flex: 1 1 45%; /* Flex-basis of 45% to allow two items to fit side by side with some space */
+  min-width: 280px; /* Minimum width to ensure content doesn't collapse */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding in element’s total width */
+}
+
+.skills-section h1 {
+  margin-top: 0;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: white;
+}
+
+.category-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.skills-bar-container {
+  margin-bottom: 10px; /* Space between progress bars */
+}
+
+.skill-name {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: white;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: rgb(235, 205, 34);
+  border-radius: 5px;
+  height: 15px;
+  width: 100%; /* Fill the container width */
+  position: relative;
+}
+
+.progress-bar-fill {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skill-percentage {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column; /* Stack categories vertically on smaller screens */
+  }
+
+  .skills-category {
+    flex: 1 1 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Space between stacked categories */
+  }
+}
